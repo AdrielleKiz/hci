@@ -26,5 +26,31 @@ namespace hci
         {
 
         }
+
+        private void btnLogin(object sender, EventArgs e)
+        {
+            this.Visible = false;
+
+            Form3 mainMenu = new Form3();
+            mainMenu.Show();
+            MessageBox.Show("Login Successful");
+
+            //MessageBox.Show("Login Failed");
+        }
+
+        private void btnCancel(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lnkSignup(object sender, EventArgs e)
+        {
+            this.Visible = false;
+
+            Form2 signUp = new Form2();
+            signUp.Show();
+
+        }
+
     }
 }
